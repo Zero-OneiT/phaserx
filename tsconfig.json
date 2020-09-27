@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es2017",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "node_module/phaser/types"
+    ],
+    "types": [
+      "phaser"
+    ],
+    "paths": {
+      "@core/*": [
+        "core/*"
+      ],
+      "@decorators/*": [
+        "decorators/*"
+      ],
+      "@helpers/*": [
+        "helpers/*"
+      ],
+      "@root/*": [
+        "*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "__test__"
+  ]
+}
